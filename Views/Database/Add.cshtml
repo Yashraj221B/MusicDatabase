@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Add";
+}
+
+<p class="display-6 text-center">Add Song Entry</p>
+<form action="add" method="post">
+    @Html.AntiForgeryToken()
+    <div class="mb-3">
+        <label for="SongName" class="form-label">Song Name</label>
+        <input type="text" class="form-control" id="SongName" name="SongName" placeholder="On My Way" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="SongArtist" class="form-label">Song Artist</label>
+        <input type="text" class="form-control" id="SongArtist" name="SongArtist" placeholder="Alan Walker">
+    </div>
+
+    <div class="mb-3">
+        <label for="SongAlbum" class="form-label">Song Album</label>
+        <input type="text" class="form-control" id="SongAlbum" name="SongAlbum" placeholder="Live Fast">
+    </div>
+
+    <div class="mb-3">
+        <label for="SongReleased" class="form-label">Song Release Date</label>
+        <input type="text" class="form-control" id="SongReleased" name="SongReleased" placeholder="2019">
+    </div>
+
+    <div class="mb-3">
+        <label for="SongURL" class="form-label">Song URL</label>
+        <input type="text" class="form-control" id="SongURL" name="SongURL" placeholder="https://music.youtube.com/watch?v=">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Song</button>
+
+</form>

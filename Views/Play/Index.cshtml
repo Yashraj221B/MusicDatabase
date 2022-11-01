@@ -1,0 +1,57 @@
+@model MusicDatabase.Models.SongEntry;
+@{
+    ViewData["Title"] = "Play Song";
+}
+@if (Model !=null)
+{
+    string songurl = @Model.SongEntryId + ".mp4";
+    <div class="player">
+        <div class="thumbnail">
+            <p>Song Name: @Model.SongName</p>
+            <p>Song Artist: @Model.SongArtist</p>
+            <p>Song Album: @Model.SongAlbum</p>
+            <p>Song Release Date: @Model.SongReleased</p>
+        </div>
+        <div class="controls">
+            <div class="progressBar" id="songTime">
+                <div class="progressLine">
+                    <div class="handle"></div>
+                </div>
+            </div>
+            <div class="time">
+                <p id="currentTime">2:30</p>
+                <p class="totalTime">3:20</p>
+            </div>
+            <div class="actions">
+                <div id="mediaPlayerContainer">
+                    <input type="hidden" id="mid" value="@Model.SongEntryId">
+                    <audio id="mediaPlayer" src="~/Songs/@songurl"></audio>
+                </div>
+                <div>
+                    <button class="seekbtn" id="previous">
+                        <img src="~/Assets/skip_previous.svg" alt="" width="30px" height="30px">
+                    </button>
+                    <button class="playPausebtn" id="PlayButton">
+                        <img src="~/Assets/play.svg" alt="" width="40px" height="40px">
+                    </button>
+                    <button class="seekbtn" id="next">
+                        <img src="~/Assets/skip_next.svg" alt="" width="30px" height="30px">
+                    </button>
+                </div>
+                <div style="display:flex; flex-direction: row-reverse; width:100%; align-items:center;gap:10px">
+                    <div class="progressBar" id="songVolume">
+                        <div class="progressLine">
+                            <div class="handle"></div>
+                        </div>
+                    </div>
+                    <div id="volumeIcon">
+                        <img src="~/Assets/volume_up.svg" alt="" width="36px" height="36px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/mediaplayer.js"></script>
+}else{
+    <p class="display-4 text-center text-danger">@ViewData["ERROR"]</p>
+}
