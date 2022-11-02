@@ -5,7 +5,7 @@ This is a web based applications that supports adding songs to your database and
 
 * This application uses following framework/libraries:
     * ASP.NET CORE
-    * ENTITY FRAMEWORK CORE (Datebase management)
+    * ENTITY FRAMEWORK CORE (Database management)
     * Selenium Python (web automation)
     * Pytube (For downloading YouTube videos)
 * This application supports following actions:
