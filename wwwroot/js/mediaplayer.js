@@ -150,5 +150,9 @@ timeProgressBar.onmousedown = moveTimeSlider;
 volumeProgressBar.onmousedown = moveVolumeSlider;
 playButton.onclick = PlayButtonClicked;
 
+if (getCookie("VOLUME") != "") {
+    mediaPlayer.volume = getCookie("VOLUME");
+}
+
 document.onresize = refresh;
 document.onkeydown = keyEvent;
