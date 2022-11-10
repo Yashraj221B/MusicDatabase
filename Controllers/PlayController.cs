@@ -45,7 +45,6 @@ public class PlayController : Controller
         if (database.songEntries != null)
         {
             foreach (var song in database.songEntries)
-
             {
                 if (stop == 1)
                 {
@@ -59,15 +58,28 @@ public class PlayController : Controller
         }
         return Redirect("/Play");
     }
-    public void log(string str)
+    public IActionResult Previous(string mid)
     {
-        Console.WriteLine(str);
+        int index = -1;
+        if (database.songEntries != null)
+        {
+            foreach (var song in database.songEntries)
+            {
+                if (song.SongEntryId == mid)
+                {
+                    break;
+                }
+                index++;
+            }
+            if (index == -1)
+            {
+                return Redirect("/Play?mid=" + database.songEntries.ToList().Last().SongEntryId);
+            }else{
+                return Redirect("/Play?mid=" + database.songEntries.ToList()[index].SongEntryId);
+            }
+        }
+        return Redirect("/Play");
     }
-    public void log(int str)
-    {
-        Console.WriteLine(str);
-    }
-
     public IActionResult DownloadMedia()
     {
         try

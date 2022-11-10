@@ -1,0 +1,1 @@
+dotnet publish --configuration Release --self-contained true --runtime win-x64 --verbosity n --version-suffix 1.0

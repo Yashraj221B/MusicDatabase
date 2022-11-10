@@ -1,5 +1,7 @@
 using Microsoft.Extensions.FileProviders;
 using MusicDatabase.Data;
+using System.Threading;
+using System.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,5 +36,12 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// Process ps = new Process();
+// ProcessStartInfo StartInfo = new ProcessStartInfo();
+// StartInfo.FileName = "python.exe " + Path.Combine(builder.Environment.ContentRootPath,"DownloaderClient.py");
+// ps.StartInfo = StartInfo;
+// ps.Start();
 
 app.Run();
+
+// ps.Kill();
