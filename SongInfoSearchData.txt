@@ -1,0 +1,713 @@
+PS C:\Users\Yashraj221b\YASHFILES\MusicDatabase> py .\GetSongInfo.py
+Enter Server URL: https://localhost:7056/
+
+DevTools listening on ws://127.0.0.1:52064/devtools/browser/80daeab7-0732-4fb0-a80e-2eef25ab76e9
+Enter Song Name: [8152:8376:0124/174353.849:ERROR:device_event_log_impl.cc(215)] [17:43:53.850] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[8152:8376:0124/174353.946:ERROR:device_event_log_impl.cc(215)] [17:43:53.948] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+The Nights Avicii
+Released: 2014
+Album: The Days / Nights EP
+Artist: Avicii
+Genre: Dance/Electronic
+Nominations: Grammy Award for Best Dance/Electronic Recording
+URL: https://www.youtube.com/watch?v=2S0QhGGO1gQ
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Dusk Till Dawn[8152:9684:0124/174447.254:ERROR:util.cc(134)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+Artist: Zayn
+Album: Icarus Falls
+Genres: R&B/Soul, Children's Music, Pop
+URL: https://www.youtube.com/watch?v=p-eS-_olx9M
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Heat Waves Son[6372:3476:0124/174545.944:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is                                                                                          Heat Waves Song
+Released: 2020
+Artist: Glass Animals
+Album: Dreamland
+Genres: Alternative/Indie, Contemporary R&B, Psychedelic pop
+Nominations: iHeartRadio Music Award for Best Lyrics, MORE
+URL: https://www.youtube.com/watch?v=d6F4B5KxRo8
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Ignite Alan Walker
+Artist: K-391
+Released: 2018
+Album: Ignite (Remixes)
+Featured artists: Alan Walker, Julie Bergan, Seungri
+Genre: Dance/Electronic
+Nominations: Spellemann Award for Hit of the Year
+URL: https://www.youtube.com/watch?v=zrwTYozyzYA
+If the data is incorrect please correct and press ENTER
+
+Enter Song Name: Never Forget You
+Released: 2016
+Artists: Zara Larsson, MNEK
+Album: 538 Hitzone - Best Of 2016
+Genres: Electronic dance music, House music, Synth-pop, Pop
+Nominations: Teen Choice Award for Choice Music – Break-Up Song, Radio Disney Music Award for Best Dance Track
+URL: https://www.youtube.com/watch?v=bdYlVRI7JrY
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Stereo Hearts
+Album: The Papercut Chronicles II
+Released: 2011
+Artist: Gym Class Heroes
+Featured artist: Adam Levine
+Nominations: MuchMusic Video Award for iHeartRadio International Duo or Group of the Year, MORE
+Genres: Indian Film Pop, Dance/Electronic, Pop, Rock
+URL: https://www.youtube.com/watch?v=3tQIwR17ufo
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Call You Mine
+Artist: The Chainsmokers
+Released: 2019
+Album: World War Joy
+Genres: Dance/Electronic, Pop
+Awards: MTV Video Music Award for Best Dance Video
+Nominations: MTV Video Music Award for Best Dance Video, MORE
+URL: https://www.youtube.com/watch?v=am9XSPCRN8s
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: I Like Me Better
+Released: 2018
+Album: I Met You When I Was 18 (The Playlist)
+Artist: Lauv
+Genre: Pop
+Nominations: Radio Disney Music Award for Best Crush Song
+URL: https://www.youtube.com/watch?v=bnVkf-z28YU
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: The Middle Zedd
+Artists: Maren Morris, Zedd, Grey
+Album: 538 Hitzone 85
+URL: https://www.youtube.com/watch?v=4aIB92XuDxI
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Lush Life
+Released: 2015
+Artist: Zara Larsson
+Album: Lush Life
+Genre: Pop
+Nominations: Grammis Award for Song of the Year
+URL: https://www.youtube.com/watch?v=lyYh7xOb2cY
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: 2002 Anne-Marie
+Released: 2018
+Artist: Anne-Marie
+Album: Speak Your Mind
+Genres: Dance/Electronic, Pop
+Nominations: Brit Award for Song of the Year, Brit Award for British Video of the Year
+URL: https://www.youtube.com/watch?v=P3qQk4urrU4
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Shivers Ed Sheeran
+Released: 2022
+Artist: Ed Sheeran
+Album: =
+Genres: R&B/Soul, Pop, German Pop, UK R&B, UK Rap, Afrobeats
+Nominations: MTV Video Music Award for Video of the Year, MORE
+URL: https://www.youtube.com/watch?v=RRUkmZkN-P4
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Sorry Not Sorry
+Album: Tell Me You Love Me
+Artist: Demi Lovato
+Genres: Contemporary R&B, R&B/Soul, Dance/Electronic, Pop
+URL: https://www.youtube.com/watch?v=bOhBU7V-gfY
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: How You Like That
+Album: The Album
+Released: 2020
+Artist: BLACKPINK
+Genres: Korean Dance, Dance/Electronic, K-Pop
+Awards: MAMA Award for Best Dance Performance - Female Group, MORE
+Nominations: MAMA Award for Best Dance Performance - Female Group, MORE
+URL: https://www.youtube.com/watch?v=aHnHwrJjR3U
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Pink Venom
+Album: Born Pink
+Released: 2022
+Artist: BLACKPINK
+Genres: Hip hop music, Dance-pop, Electronic dance music, Indian Film Pop, Pop rap, Korean Dance, K-Pop
+Nominations: MTV Europe Music Award for Best Video, MORE
+URL: https://www.youtube.com/watch?v=wcEIo-PE9Ho
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Boy With Luv
+Released: 2019
+Album: MAP OF THE SOUL: PERSONA
+Artist: BTS
+Featured artist: Halsey
+Genres: K-pop, Korean Dance, Pop funk
+Awards: MAMA Award for Song of the Year, MORE
+Nominations: MAMA Award for Song of the Year, MORE
+URL: https://www.youtube.com/watch?v=vDAzcyaY8hk
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Mic Drop
+Artist: BTS
+Album: Love Yourself: Her
+Genres: Korean Dance, Dance/Electronic, K-Pop
+URL: https://www.youtube.com/watch?v=25l3vhHxgvE&vl=en
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Alone Alan Walker
+Released: 2016
+Album: Alone
+Artist: Alan Walker
+Genre: Dance/Electronic
+Nominations: Echo Award for Best International Newcomer, Billboard Music Award for Top Dance/Electronic Album
+URL: https://www.youtube.com/watch?v=omvW1cI-3xg
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Alone Pt-II
+Released: 2021
+Album: World Of Walker
+Artists: Alan Walker, Ava Max
+Genres: Alternative/Indie, Dance/Electronic, Pop
+Nominations: Spellemann Award for Hit of the Year
+URL: https://www.youtube.com/watch?v=omvW1cI-3xg
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Faded
+Genre: Electro house • EDM
+Label: Mer Musikk
+Length: 3:32
+Composers: Alan Walker, Jesper Borgen, Gunnar Greve Pettersen, Mood Melodies
+URL: https://www.youtube.com/watch?v=qdpXxGPqW-Y
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Lily Alan Walker
+Released: 2018
+Album: Different World
+Artists: Emelie Hollow, K-391, Alan Walker
+Genre: Dance/Electronic
+URL: https://www.youtube.com/watch?v=ox4tmEV6-QU
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: The Spectre
+Artist: Alan Walker
+Released: 2017
+Album: The Spectre
+Genre: Dance/Electronic
+URL: https://www.youtube.com/watch?v=PC4ccbJ1jy4
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Sing Me to Sleep
+Artist: Alan Walker
+Album: Sing Me to Sleep
+Released: 2016
+Nominations: Echo Award for Best International Newcomer
+URL: https://www.youtube.com/watch?v=K7UGaydx7NI
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Lost Control
+Artists: Alan Walker, Sorana
+Released: 2018
+Album: Different World
+Genre: Dance/Electronic
+URL: https://www.youtube.com/watch?v=-Ed-GNq2EyU
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Al Falls Down
+Artists: Alan Walker, Noah Cyrus, Digital Farm Animals
+Released: 2017
+Album: All Falls Down (Remixes)
+Featured artist: Juliander
+Genre: Dance/Electronic
+URL: https://www.youtube.com/watch?v=SkILbla0RKs
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Lost Control
+Artists: Alan Walker, Sorana
+Released: 2018
+Album: Different World
+Genre: Dance/Electronic
+URL: https://www.youtube.com/watch?v=-Ed-GNq2EyU
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Diamond Heart
+Artist: Alan Walker
+Released: 2018
+Album: Diamond Heart
+Featured artist: Sophia Somajo
+Genre: Dance/Electronic
+URL: https://www.youtube.com/watch?v=c9R9VsK54ZQ
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Different World
+Artists: Alan Walker, K-391, Sofia Carson
+Released: 2018
+Album: Different World
+Featured artist: CORSAK
+Genre: Dance/Electronic
+Nominations: Billboard Music Award for Top Dance/Electronic Album
+URL: https://www.youtube.com/watch?v=CtN2h-rGwc4
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Play Alan Walker
+Artists: Alan Walker, Martin Tungevaag, K-391
+Released: 2019
+Album: Play
+Featured artist: Mangoo
+Genre: Dance/Electronic
+URL: https://www.youtube.com/watch?v=trnx5XT0cZs
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Middle Of the Night
+Released: 2022
+Album: Bravo Hits 116
+Artist: Elley Duhé
+Genre: Pop
+URL: https://www.youtube.com/watch?v=CfgcbCe9Z_o
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Blinding Lights
+Released: 2019
+Album: Blinding Lights
+Artist: The Weeknd
+Genres: R&B/Soul, Synthwave, Pop
+Awards: Billboard Music Award for Top Hot 100 Song, MORE
+Nominations: Billboard Music Award for Top Hot 100 Song, MORE
+URL: https://www.youtube.com/watch?v=XwxLwG2_Sxk
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Let Me Down Slowly
+Album: Let Me Down Slowly
+Artist: Alec Benjamin
+Released: 2018
+Genre: Pop
+URL: https://www.youtube.com/watch?v=6N-7TM6IANQ
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Taki Taki
+Artist: DJ Snake
+Released: 2018
+Album: Taki Taki
+Featured artists: Selena Gomez, Cardi B, Ozuna
+Genre: Dance/Electronic
+Awards: Lo Nuestro Award for Crossover Collaboration of the Year
+Nominations: MTV Video Music Award for Best Dance Video, MORE
+URL: https://www.youtube.com/watch?v=mIL7G7C7_JE
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Stay Zedd
+Released: 2017
+Album: Everything, Everything (Original Motion Picture Soundtrack)
+Artists: Alessia Cara, Zedd
+Genres: Alternative/Indie, R&B/Soul, Dance/Electronic, Pop, Jazz
+Awards: MTV Video Music Award for Best Dance Video, MORE
+Nominations: MTV Video Music Award for Best Dance Video, MORE
+URL: https://www.youtube.com/watch?v=UP8yVPtW5YE
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: As it was
+Released: 2022
+Artist: Harry Styles
+Album: Harry's House
+Awards: MTV Video Music Award for Best Cinematography, MORE
+Nominations: Grammy Award for Song of the Year, MORE
+Genres: Funk, Contemporary R&B, Pop rock, Alternative/Indie, Synth-pop
+URL: https://www.youtube.com/watch?v=heixGVdMsgU
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Watermelon Sugar
+Released: 2019
+Album: Fine Line
+Artist: Harry Styles
+Awards: Grammy Award for Best Pop Solo Performance, Brit Award for Song of the Year
+Nominations: Grammy Award for Best Pop Solo Performance, MORE
+Genre: Pop
+URL: https://www.youtube.com/watch?v=zmV7b2-qAKg
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: World's Smallest Violin
+Released: 2021
+Artist: AJR
+Album: OK Orchestra
+Genre: Alternative/Indie
+URL: https://www.youtube.com/watch?v=wUvw374tP7o
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: The Good Part
+Released: 2017
+Album: The Click
+Artist: AJR
+Genre: Alternative/Indie
+URL: https://www.youtube.com/watch?v=U7itjaZZxqw
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Believer
+Artist: Imagine Dragons
+Genres: Pop rock, Arena rock
+URL: https://www.youtube.com/watch?v=W0DM5lcj6mw
+If the data is incorrect please correct and press ENTERThunder
+
+
+Enter Song Name: Thunder
+Artist: Imagine Dragons
+Released: 2017
+Album: Evolve
+Genres: Synth-pop, Electropop, Arena rock, Pop
+Nominations: Grammy Award for Best Pop Duo/Group Performance, MORE
+URL: https://www.youtube.com/watch?v=GtEvysh1654
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Radioactive Imagine Dragon
+Artist: Imagine Dragons
+Released: 2012
+Album: Night Visions
+Genres: Pop rock, Alternative/Indie, Electronic rock, Children's Music, Dance/Electronic
+Awards: Grammy Award for Best Rock Performance, MORE
+Nominations: Grammy Award for Record of the Year, MORE
+URL: https://www.youtube.com/watch?v=vJao1u2uBqY
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: New Rules
+Released: 2017
+Album: Dua Lipa
+Artist: Dua Lipa
+Genres: R&B/Soul, Dance/Electronic, Pop, German Pop, UK R&B
+Awards: Radio Disney Music Award for Best Song To Lip Sync To
+Nominations: Brit Award for Song of the Year, MORE
+URL: https://www.youtube.com/watch?v=O1TFUEMzTvE
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: One Kiss
+Released: 2018
+Artists: Calvin Harris, Dua Lipa
+Album: One Kiss
+Awards: Brit Award for Song of the Year, MORE
+Genres: Dance-pop, Tropical house, Diva house, Dance Pop
+Nominations: Brit Award for Song of the Year, MORE
+URL: https://www.youtube.com/watch?v=Bm8rz-llMhE
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Levitating
+Released: 2020
+Artist: Dua Lipa
+Featured artist: DaBaby
+Album: Future Nostalgia
+Genres: Disco, Electro, Space rock, Nu-disco, Pop funk, Pop
+Awards: iHeartRadio Music Award for Song of the Year, MORE
+Nominations: Billboard Music Award for Top Hot 100 Song, MORE
+URL: https://www.youtube.com/watch?v=MMOqfBLWxH8
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Safari Serena
+Artist: Serena
+Released: 2017
+Album: Safari (Demeter Remix)
+URL: https://www.youtube.com/watch?v=qYFzvNwg0_k
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Without Me
+Released: 2020
+Album: Manic
+Artist: Halsey
+Genres: Electronic dance music, Electro, Contemporary R&B, Pop
+Awards: American Music Award for Favorite Pop Song
+Nominations: iHeartRadio Music Award for Best Lyrics, MORE
+URL: https://www.youtube.com/watch?v=0H7txPklqAI
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Symphony
+Album: So Good
+Artist: Clean Bandit
+Released: 2017
+Featured artist: Zara Larsson
+Genres: Dance music, Dance-pop, Dance/Electronic, Pop, Country
+Nominations: Brit Award for Song of the Year, Brit Award for British Video of the Year
+URL: https://www.youtube.com/watch?v=PIf9GvWaxQQ
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Ruin My Life
+Artist: Zara Larsson
+Album: New Year's Eve - NYE 2018/2019
+Genres: Funk, Electropop, Disco, Dance Pop
+URL: https://www.youtube.com/watch?v=gH-pFHhr7Nc
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Ain't My Fault
+Artist: Zara Larsson
+Released: 2017
+Album: So Good
+Genres: Dance/Electronic, Pop, Country
+Awards: Grammis Award for Artist of the Year
+Nominations: Grammis Award for Song of the Year, Grammis Award for Artist of the Year
+URL: https://www.youtube.com/watch?v=JWKKtKKbfvk
+If the data is incorrect please correct and press ENTERUncover
+
+
+Enter Song Name: Uncover
+Genre: Hip-Hop/Rap
+EPs: discover my real life, NEDOSTUPNOSTb
+URL: https://www.youtube.com/watch?v=sEfL4HnRDvY
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: I'm a Mess
+Artist: Bebe Rexha
+Released: 2018
+Album: Expectations
+Genre: Pop
+URL: https://www.youtube.com/watch?v=bfn9i5K2P6k
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Me And My Broken Heart
+Artist: Push Baby
+Released: 2014
+Album: Me And My Broken Heart
+Genre: Pop
+Nominations: Teen Choice Award for Choice Single: Group
+URL: https://www.youtube.com/watch?v=p1RbaSOb1VY
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Sucker
+Released: 2019
+Artist: Jonas Brothers
+Album: Music From Chasing Happiness
+Genre: Pop
+Awards: MTV Video Music Award for Best Pop, Billboard Music Award for Top Radio Song
+Nominations: Grammy Award for Best Pop Duo/Group Performance, MORE
+URL: https://www.youtube.com/watch?v=T-h7itoSndI
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: There's Nothing Holdin' Me Back
+Artist: Shawn Mendes
+Released: 2016
+Album: Illuminate
+Genre: Pop
+Awards: MTV Europe Music Award for Best Song, Juno Award for Single of the Year
+Nominations: MTV Europe Music Award for Best Song, MORE
+URL: https://www.youtube.com/watch?v=vmXVPbqqzwA
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Treat You Better
+Released: 2016
+Album: Illuminate
+Artist: Shawn Mendes
+Genre: Pop
+Awards: Radio Disney Music Award for Song of the Year
+Nominations: Radio Disney Music Award for Song of the Year, MORE
+URL: https://www.youtube.com/watch?v=0xgaqhe5QiM
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Mercy
+Lyricist: Shawn Mendes
+Key: E minor
+Recorded: 2016
+Label: Island; Universal
+Producer(s): Jake Gosling; Teddy Geiger
+Composers: Shawn Mendes, Teddy Geiger, Danny Parker, Ilsey Juber
+URL: https://www.youtube.com/watch?v=TZhuCTXjGHY
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Stitches
+Album: Handwritten
+Released: 2015
+Artist: Shawn Mendes
+Genre: Pop
+Nominations: Radio Disney Music Award for Song of the Year, MORE
+URL: https://www.youtube.com/watch?v=UYCg6NBiXMI
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: In the End
+Artist: Tommee Profitt
+Released: 2021
+Album: Step Into Summer
+Featured artists: Fleurie, Jung Youth
+Genres: Alternative rock, Alternative/Indie, R&B/Soul, Latin Urbano, MORE
+URL: https://www.youtube.com/watch?v=m6sjfw37xo8
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: I'm Good
+Released: 2022
+Artists: Bebe Rexha, David Guetta
+Album: I'm Good (Blue) (Extended Remixes)
+Genre: Dance/Electronic
+Nominations: NRJ Music Award for International Song of the Year, MORE
+URL: https://www.youtube.com/watch?v=eWhZryVNMQE
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Hymn for the Weekend
+Artist: Coldplay
+Album: A Head Full of Dreams
+Released: 2015
+Featured artist: Beyoncé
+Awards: NRJ Music Award for Most Streamed Song
+Genre: Alternative/Indie
+URL: https://www.youtube.com/watch?v=HJrKVYJdABc
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Paradise
+Artist: Coldplay
+Released: 2011
+Album: Mylo Xyloto
+Awards: MTV Video Music Award for Best Rock Video, Teen Choice Award for Choice Rock Song
+Nominations: Grammy Award for Best Pop Duo/Group Performance, MORE
+Genres: Alternative rock, Pop rock, Contemporary R&B, R&B/Soul, Electronic rock, UK R&B
+URL: https://www.youtube.com/watch?v=jE6RIixV_Eo
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: A Sky Full of Stars
+Released: 2014
+Album: Ghost Stories
+Artist: Coldplay
+Genres: Alternative/Indie, Dance/Electronic, Pop
+Nominations: Grammy Award for Best Pop Duo/Group Performance, MORE
+URL: https://www.youtube.com/watch?v=_HlvFab8gnA
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Something Just Like This
+Album: Memories...Do Not Open
+Artists: The Chainsmokers, Coldplay
+Genres: Pop music, Electronic dance music, Electropop
+URL: https://www.youtube.com/watch?v=FM7MFYoylVs
+If the data is incorrect please correct and press ENTERSomething Just Like This
+
+
+Enter Song Name: Butter BTS
+Album: Butter
+Released: 2021
+Artist: BTS
+Genres: K-pop, Dance-pop, Electronic dance music, Korean Dance, Disco-pop
+Awards: MAMA Award for Song of the Year, MORE
+Nominations: Grammy Award for Best Pop Duo/Group Performance, MORE
+URL: https://www.youtube.com/watch?v=oozAckPXkVo
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: IDOL
+Album: Love Yourself: Answer
+Artist: BTS
+Genres: K-pop, Korean Dance, Hip-Hop/Rap
+URL: https://www.youtube.com/watch?v=__jDo1dfLow
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: IDOL BTS
+Album: Love Yourself: Answer
+Artist: BTS
+Genres: K-pop, Korean Dance, Hip-Hop/Rap
+URL: https://www.youtube.com/watch?v=itSDAJL7CpE
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Burning Up BTS
+Artist: BTS
+Released: 2016
+Genres: K-pop, Hip hop music, Dance-pop, Contemporary R&B, Korean Dance
+URL: https://www.youtube.com/watch?v=PYOft8ysI48
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: We Don't Talk Anymore
+Album: Nine Track Mind
+Artist: Charlie Puth
+Released: 2016
+Genres: Dance/Electronic, Pop, Hip-Hop/Rap, Christian
+Nominations: MTV Video Music Award for Best Collaboration, MORE
+URL: https://www.youtube.com/watch?v=A3TKxux17ZA
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Night Changes
+Artist: One Direction
+Album: Four
+Genre: Pop
+URL: https://www.youtube.com/watch?v=7KPyunRIjr0
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: What Makes You Beautiful
+Released: 2011
+Artist: One Direction
+Album: Up All Night
+Awards: Brit Award for Song of the Year, MORE
+Genre: Pop
+Nominations: Brit Award for Song of the Year, MORE
+URL: https://www.youtube.com/watch?v=qBgaC5k2nTo
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: Don't Let Me Down
+Artist: The Chainsmokers
+Album: Collage
+Released: 2016
+Featured artist: Daya
+Genres: Electronic dance music, Trap music, Pop
+Awards: Grammy Award for Best Dance/Electronic Recording
+URL: https://www.youtube.com/watch?v=mywyuiAbww4
+If the data is incorrect please correct and press ENTER
+
+
+Enter Song Name: All We Know
+Artist: The Chainsmokers
+Featured artist: Phoebe Ryan
+Genres: Dance/Electronic, Pop
+Nominations: Echo Award for Best International Newcomer
+URL: https://www.youtube.com/watch?v=XB1wwghe6jc
+If the data is incorrect please correct and press ENTER
