@@ -139,7 +139,7 @@ function keyEvent(event) {
             return;
         } else if (event.shiftKey) {
             event.preventDefault();
-            //pending Code for playing next song
+            PlayPrevious();
         } else {
             event.preventDefault();
             mediaPlayer.currentTime = mediaPlayer.currentTime - 5;
@@ -150,7 +150,7 @@ function keyEvent(event) {
             return;
         } else if (event.shiftKey) {
             event.preventDefault();
-            //pending Code for playing next song
+            PlayPrevious();
         } else {
             event.preventDefault();
             mediaPlayer.currentTime = mediaPlayer.currentTime + 5;
