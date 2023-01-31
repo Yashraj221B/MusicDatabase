@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="~/MusicDatabase.styles.css" asp-append-version="true" />
     <script src="~/js/utilities.js" asp-append-version="true"></script>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -24,17 +26,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">Database</a>
+                            <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">Database</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-controller="Database" asp-action="List">View Songs</a></li>
-                                <li><a class="dropdown-item" asp-controller="Database" asp-action="Add">Add Song</a></li>
-                                <li><a class="dropdown-item" asp-controller="Database" asp-action="Edit">Edit Song</a></li>
+                                <li><a class="dropdown-item" asp-controller="Database" asp-action="List">View Songs</a>
+                                </li>
+                                <li><a class="dropdown-item" asp-controller="Database" asp-action="Add">Add Song</a>
+                                </li>
+                                <li><a class="dropdown-item" asp-controller="Database" asp-action="Edit">Edit Song</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Play"
-                                asp-action="Index">Play</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Play" asp-action="Index">Play</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home"
@@ -42,6 +46,10 @@
                         </li>
                     </ul>
                 </div>
+                <form class="d-flex" asp-controller="Database" asp-action="Search" method="get">
+                    <input name="SearchTerm" class="form-control me-2" type="search" placeholder="Search Song" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </nav>
     </header>
@@ -61,4 +69,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
