@@ -220,20 +220,22 @@ public class DatabaseController : Controller
                                     if (Encoding.ASCII.GetString(code) == DOWNLOAD_COMPLETE)
                                     {
                                         Console.WriteLine("DOWNLOADED: " + song.SongURL);
+                                        stream.Write(Encoding.ASCII.GetBytes(END_DOWNLOAD));
                                         return Content("<h1>DOWNLOADED SUCCESSFULLY</h1>", "text/html");
                                     }
                                     else if (Encoding.ASCII.GetString(code) == DOWNLOAD_ERROR)
                                     {
                                         Console.WriteLine("ERROR DOWNLOADING: " + song.SongURL);
+                                        stream.Write(Encoding.ASCII.GetBytes(END_DOWNLOAD));
                                         return Content("<h1>DOWNLOAD FAILED</h1>", "text/html");
                                     }
                                 }
                             }
                         }
                     }
-                    stream.Write(Encoding.ASCII.GetBytes(END_DOWNLOAD));
                     stream.Close();
                     server.Close();
+                    server.Dispose();
                 }
             }
             catch (System.Exception e)
@@ -262,8 +264,8 @@ public class DatabaseController : Controller
             {
                 if (song != null)
                 {
-                    if (song.SongName.Contains(searchTerm))
-                        if (song.SongName != null)
+                    if (song.SongName != null)
+                        if (song.SongName.ToLower().Contains(searchTerm.ToLower()))
                         {
                             results = results.Append<SongEntry>(song).ToArray();
                             count++;
@@ -271,7 +273,7 @@ public class DatabaseController : Controller
                         }
                     if (song.SongAlbum != null)
                     {
-                        if (song.SongAlbum.Contains(searchTerm))
+                        if (song.SongAlbum.ToLower().Contains(searchTerm.ToLower()))
                         {
                             results = results.Append<SongEntry>(song).ToArray();
                             count++;
@@ -280,7 +282,7 @@ public class DatabaseController : Controller
                     }
                     if (song.SongArtist != null)
                     {
-                        if (song.SongArtist.Contains(searchTerm))
+                        if (song.SongArtist.ToLower().Contains(searchTerm.ToLower()))
                         {
                             results = results.Append<SongEntry>(song).ToArray();
                             count++;
