@@ -4,27 +4,11 @@ using MusicDatabase.Models;
 using MusicDatabase.Data;
 using System.Security.Cryptography;
 using System.Text;
-using System.Net.Sockets;
 
 namespace MusicDatabase.Controllers;
 
 public class DatabaseController : Controller
 {
-    private string ToHex(byte[] bytes, bool upperCase)
-    {
-        StringBuilder result = new StringBuilder(bytes.Length * 2);
-        for (int i = 0; i < bytes.Length; i++)
-            result.Append(bytes[i].ToString(upperCase ? "X2" : "x2"));
-        return result.ToString();
-    }
-
-    private byte[] GenerateToken(byte[] data)
-    {
-        using (var sha256 = SHA256.Create())
-        {
-            return sha256.ComputeHash(data);
-        }
-    }
     private readonly ILogger<HomeController> _logger;
 
     protected private MusicContext database = new MusicContext();
@@ -115,7 +99,7 @@ public class DatabaseController : Controller
                 if (song != null)
                 {
                     database.songEntries.Remove(song);
-                    database.SaveChanges();
+                    database.SaveChanges();                    
                 }
             }
         }

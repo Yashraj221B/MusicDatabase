@@ -71,7 +71,6 @@ def handleConnection(client: socket.socket, address: tuple):
 
             elif code == END_DOWNLOAD:
                 client.close()
-                print("Connection Closed:",address)
                 break
             else:
                 client.send(INVALID_CODE);
