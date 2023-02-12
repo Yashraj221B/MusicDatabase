@@ -17,6 +17,8 @@ var volumeProgress = document.getElementsByClassName("progressLine")[1];
 var volumeProgressHandle = document.getElementsByClassName("handle")[1];
 var volumeIcon = document.getElementById("volumeIcon").children[0]
 
+var searchBox = document.getElementsByName("SearchTerm")[0]
+
 function moveTimeSlider(event) {
     if (event.buttons == 1) {
         timeProgress.style.width = event.x - timeProgressBar.offsetLeft + "px";
@@ -157,6 +159,7 @@ function keyEvent(event) {
             refresh();
         }
     }
+    setCookie("VOLUME", mediaPlayer.volume, 30);
 }
 
 function PlayNext(event) {
@@ -189,5 +192,8 @@ PlayButtonClicked();
 
 document.onresize = refresh;
 document.onkeydown = keyEvent;
+
+searchBox.onfocus = () => {document.onkeydown = null}
+searchBox.onblur = () => {document.onkeydown = keyEvent}
 
 setTotalTime();
