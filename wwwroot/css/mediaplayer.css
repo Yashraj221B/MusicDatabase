@@ -1,0 +1,185 @@
+:root{
+    --containerBG: #fff;
+    --cardBG: #fff;
+    --controlBG: #fff;
+    --progressBarBG: #fff;
+    --progressBG: #fff;
+    --progressHandleBG: #fff;
+    --progressHandleHoverBG: #fff;
+    --playButtonBG: #fff;
+    --playButtonHoverBG: #fff;
+    --seekButtonBG: #fff;
+    --seekButtonHoverBG: #fff;
+    --listContainerBG: #fff;
+    --songBoxBG: #fff;
+    --songBoxHoverBG: #fff;
+}
+.container{
+    overflow: auto;
+    background-color: var(--containerBG);
+}
+
+.maincontainer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+}
+
+/* MAIN CONTAINER */
+.songContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CARD SECTON */
+.songCard {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    padding: 1.4em;
+    height: -webkit-fill-available;
+    margin: 1em;
+    align-items: center;
+    background-color: var(--cardBG);
+    box-shadow: 0 0 10px 2px #00000030;
+    border-radius: 10px;
+}
+
+.songInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.songInfo p {
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.thumbnail {
+    /* background-color: aqua; */
+    width: 28vh;
+    height: 28vh;
+    border-radius: 36vh;
+    box-shadow: 0 0 10px 2px #00000030;
+    /* border-radius: 10px; */
+}
+
+/* CONTROLS SECTION */
+.songControls {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 1em;
+    background-color: var(--controlBG);
+    box-shadow: 0 0 10px 2px #00000030;
+    border-radius: 10px;
+}
+
+.progressBarContainer {
+    display: flex;
+    width: 100%;
+}
+
+.progressBar {
+    height: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--progressBarBG);
+    box-shadow: 0 0 4px 2px #00000030;
+    border-radius: 10px;
+}
+
+._progress {
+    width: 50%;
+    height: 100%;
+    background-color: var(--progressBG);
+    border-radius: 10px;
+}
+
+.handle {
+    width: 16px;
+    height: 16px;
+    margin: -8px;
+    background-color: var(--progressHandleBG);
+    box-shadow: 0 0 10px 2px #00000030;
+    border-radius: 10px;
+}
+
+.timeContainer {
+    display: flex;
+    justify-content: space-between;
+    /* height: 0; */
+}
+
+.timeContainer p {
+    margin: 0;
+}
+
+.controlButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.play {
+    width: 4em;
+    height: 4em;
+    background-color: var(--playButtonBG);
+    box-shadow: 0 0 10px 2px #00000030;
+    border-radius: 100px;
+}
+
+.seek {
+    width: 3em;
+    height: 3em;
+    background-color: var(--seekButtonBG);
+    box-shadow: 0 0 6px 2px #00000030;
+    border-radius: 100px;
+}
+
+/* LIST SECTION */
+.listContainer {
+    overflow: auto;
+    background-color: var(--listContainerBG);
+    margin: 1em;
+    box-shadow: 0 0 10px 2px #00000030;
+    border-radius: 10px;
+}
+
+.songList {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.songList p {
+    margin: 0;
+}
+
+.songList .header {
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.scroll {
+    height: 100%;
+    overflow: auto;
+}
+
+.songName{
+    font-size: 1.2em;
+}
+.songBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 10px;
+    background-color: var(--songBoxBG);
+    box-shadow: 0 0 8px 2px #0000001c;
+    border-radius: 4px;
+}

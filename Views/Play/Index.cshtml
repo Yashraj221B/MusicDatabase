@@ -2,56 +2,435 @@
 @{
     ViewData["Title"] = "Play Song";
 }
-@if (Model !=null)
-{
-    string songurl = @Model.SongEntryId + ".mp4";
-    <div class="player">
-        <div class="thumbnail">
-            <p>Song Name: @Model.SongName</p>
-            <p>Song Artist: @Model.SongArtist</p>
-            <p>Song Album: @Model.SongAlbum</p>
-            <p>Song Release Date: @Model.SongReleased</p>
+    
+<link rel="stylesheet" href="~/css/mediaplayer.css">
+<div class="maincontainer">
+    <div class="songContainer">
+        <div class="songCard">
+            <div class="thumbnail"></div>
+            <div class="songInfo">
+                <p>On My Way</p>
+                <p>Alan Walker</p>
+                <p>Live Fast</p>
+                <p>2018</p>
+            </div>
         </div>
-        <div class="controls">
-            <div class="progressBar" id="songTime">
-                <div class="progressLine">
+        <div class="songControls">
+            <div class="progressBarContainer">
+                <div class="progressBar">
+                    <div class="_progress"></div>
                     <div class="handle"></div>
                 </div>
             </div>
-            <div class="time">
-                <p id="currentTime">2:30</p>
-                <p id="totalTime">3:20</p>
+            <div class="timeContainer">
+                <p>3:30</p>
+                <p>2:13</p>
             </div>
-            <div class="actions">
-                <div id="mediaPlayerContainer">
-                    <input type="hidden" id="mid" value="@Model.SongEntryId">
-                    <audio id="mediaPlayer" src="~/Songs/@songurl"></audio>
-                </div>
-                <div>
-                    <button class="seekbtn" id="previous">
-                        <img src="~/Assets/skip_previous.svg" alt="" width="30px" height="30px">
-                    </button>
-                    <button class="playPausebtn" id="PlayButton">
-                        <img src="~/Assets/play.svg" alt="" width="40px" height="40px">
-                    </button>
-                    <button class="seekbtn" id="next">
-                        <img src="~/Assets/skip_next.svg" alt="" width="30px" height="30px">
-                    </button>
-                </div>
-                <div style="display:flex; flex-direction: row-reverse; width:100%; align-items:center;gap:10px">
-                    <div class="progressBar" id="songVolume">
-                        <div class="progressLine">
-                            <div class="handle"></div>
-                        </div>
+            <div class="controlButtons">
+                <div class="seek"></div>
+                <div class="play"></div>
+                <div class="seek"></div>
+            </div>
+        </div>
+    </div>
+    <div class="listContainer">
+        <div class="songList">
+            <p class="header">SONGS</p>
+            <div class="scroll">
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
                     </div>
-                    <div id="volumeIcon">
-                        <img src="~/Assets/volume_up.svg" alt="" width="36px" height="36px">
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
                     </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
+                </div>
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        <p class="songName">On My Way</p>
+                        <p class="songArtist">Alan Walker</p>
+                    </div>
+                    <p>3:20</p>
                 </div>
             </div>
         </div>
     </div>
-    <script src="~/js/mediaplayer.js"></script>
-}else{
-    <p class="display-4 text-center text-danger">@ViewData["ERROR"]</p>
-}
+</div>
+@* <script src="~/js/mediaplayer.js"></script> *@
