@@ -9,4 +9,5 @@ class SongEntry
     public string? SongAlbum { get; set; }
     public string? SongReleased { get; set; }
     public string? SongURL { get; set; }
+    // public string? SongThumbnail {get; set;}
 }

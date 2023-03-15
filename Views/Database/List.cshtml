@@ -3,7 +3,8 @@
     ViewData["Title"] = "View"; 
     int counter = 0;
 }
-<table class="table">
+<link rel="stylesheet" type="text/css" href="~/css/songlist.css">
+<!-- <table class="table">
     <thead>
         <tr>
             <th scope="col">No.</th>
@@ -37,7 +38,33 @@
             }
         }
     </tbody>
-</table>
+</table> -->
+<p class="heading">Songs</p>
+<div class="listContainer">
+    @{
+            if (Model.SongList != null)
+            {
+                foreach (var song in Model.SongList)
+                {
+                    counter++;
+                <div class="songItem">
+                    <div>
+                        <div>
+                            <p class="songName">@song.SongName</p>
+                            <p class="songArtist">@song.SongArtist</p>
+                        </div>
+                        <!-- <p class="songAlbum">@song.SongAlbum</p> -->
+                    </div>
+                    <div>
+                        <a class="btn btn-primary">Play</a>
+                        <a class="btn btn-primary" asp-controller="Database" asp-action="Edit" asp-route-id="@song.SongEntryId">Edit</a>
+                        <a class="btn btn-primary" asp-controller="Database" asp-action="Delete" asp-route-id="@song.SongEntryId">Delete</a>
+                    </div>
+                </div>
+                }
+            }
+        }
+</div>
 @if (counter == 0)
 {
     <p class="display-6 text-center text-alert">Song Database is Empty</p>

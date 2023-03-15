@@ -1,0 +1,39 @@
+p{
+	margin: 0;
+}
+.heading{
+	font-size: 4em;
+	text-align: center;
+}
+.listContainer{
+	padding: 2em;
+}
+.songItem{
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #e7f5ff;
+	border-radius: 4px;
+	margin: 0.4em;
+	padding: 0 1em;
+	box-shadow: 0 0 4px 0px #01010126;
+}
+.songName{
+	font-size: 1.2em;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.songArtist{
+	font-size: 0.8em;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.songAlbum{
+	font-size: 1.2em;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}

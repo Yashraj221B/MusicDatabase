@@ -24,6 +24,7 @@ body {
 {
   height: 100%;
 }
-.container {
+.main_container {
   user-select: none;
+  overflow: auto;
 }

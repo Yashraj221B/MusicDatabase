@@ -1,28 +1,29 @@
 :root{
     --containerBG: #fff;
-    --cardBG: #fff;
-    --controlBG: #fff;
-    --progressBarBG: #fff;
-    --progressBG: #fff;
-    --progressHandleBG: #fff;
+    --cardBG: #effcff;
+    --controlBG: rgb(239 252 255);
+    --progressBarBG: #aa87ff;
+    --progressBG: #652c8f;
+    --progressHandleBG: #ffffff;
     --progressHandleHoverBG: #fff;
-    --playButtonBG: #fff;
-    --playButtonHoverBG: #fff;
-    --seekButtonBG: #fff;
-    --seekButtonHoverBG: #fff;
-    --listContainerBG: #fff;
-    --songBoxBG: #fff;
-    --songBoxHoverBG: #fff;
+    --playButtonBG: #8251f7;
+    --playButtonHoverBG: #4b1b6e;
+    --seekButtonBG: #7e5fc9;
+    --seekButtonHoverBG: #652c8f;
+    --listContainerBG: #effcff;
+    --songBoxBG: #8251f7;
+    --songBoxHoverBG: #4b1b69;
 }
 .container{
     overflow: auto;
-    background-color: var(--containerBG);
 }
 
 .maincontainer {
     display: grid;
     grid-template-columns: 60% 40%;
     height: 100%;
+    background-color: var(--containerBG);
+    margin: 0 2em;
 }
 
 /* MAIN CONTAINER */
@@ -35,13 +36,13 @@
 .songCard {
     display: flex;
     flex-direction: row;
-    gap: 4em;
+    gap: 2em;
     padding: 1.4em;
     height: -webkit-fill-available;
     margin: 1em;
     align-items: center;
     background-color: var(--cardBG);
-    box-shadow: 0 0 10px 2px #00000030;
+    box-shadow: 0 0 4px 2px #0000002e;
     border-radius: 10px;
 }
 
@@ -61,7 +62,7 @@
     width: 28vh;
     height: 28vh;
     border-radius: 36vh;
-    box-shadow: 0 0 10px 2px #00000030;
+    box-shadow: 0 0 4px 2px #0000002e;
     /* border-radius: 10px; */
 }
 
@@ -72,7 +73,7 @@
     padding: 10px;
     margin: 1em;
     background-color: var(--controlBG);
-    box-shadow: 0 0 10px 2px #00000030;
+    box-shadow: 0 0 4px 2px #0000002e;
     border-radius: 10px;
 }
 
@@ -87,7 +88,7 @@
     display: flex;
     align-items: center;
     background-color: var(--progressBarBG);
-    box-shadow: 0 0 4px 2px #00000030;
+    box-shadow: 0 0 4px 2px #0000002e;
     border-radius: 10px;
 }
 
@@ -103,8 +104,14 @@
     height: 16px;
     margin: -8px;
     background-color: var(--progressHandleBG);
-    box-shadow: 0 0 10px 2px #00000030;
+    /* box-shadow: 0 0 10px 2px #00000050; */
     border-radius: 10px;
+    opacity: 0;
+    transition: all 100ms;
+}
+
+.handle:hover{
+    opacity: 1;
 }
 
 .timeContainer {
@@ -127,17 +134,43 @@
 .play {
     width: 4em;
     height: 4em;
-    background-color: var(--playButtonBG);
-    box-shadow: 0 0 10px 2px #00000030;
+/*    background-color: var(--playButtonBG);*/
+    box-shadow: 0 0 4px 2px #0000002e;
     border-radius: 100px;
+    cursor: pointer;
+    transition: all 100ms;
+    background: url("/Assets/play.svg") var(--playButtonBG);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.play:hover{
+    background-color: var(--playButtonHoverBG);
 }
 
 .seek {
     width: 3em;
     height: 3em;
-    background-color: var(--seekButtonBG);
-    box-shadow: 0 0 6px 2px #00000030;
+    box-shadow: 0 0 4px 2px #0000002e;
     border-radius: 100px;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+.seek:nth-child(1){
+    background: url("/Assets/skip_previous.svg") var(--seekButtonBG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2em 2em;
+}
+.seek:nth-child(3){
+    background: url("/Assets/skip_next.svg") var(--seekButtonBG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2em 2em;
+}
+.seek:hover{
+    background-color: var(--seekButtonHoverBG);
 }
 
 /* LIST SECTION */
@@ -145,7 +178,7 @@
     overflow: auto;
     background-color: var(--listContainerBG);
     margin: 1em;
-    box-shadow: 0 0 10px 2px #00000030;
+    box-shadow: 0 0 4px 2px #0000002e;
     border-radius: 10px;
 }
 
@@ -179,7 +212,36 @@
     align-items: center;
     padding: 0 10px;
     margin: 10px;
+    color: #fff;
     background-color: var(--songBoxBG);
-    box-shadow: 0 0 8px 2px #0000001c;
+    box-shadow: 0 0 4px 0px #0000002e;
     border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+.songBox:hover{
+    background-color: var(--songBoxHoverBG);
+}
+@media screen and (max-width: 768px) {
+    .maincontainer{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .listContainer{
+        overflow: unset;
+    }
+}
+@media screen and (max-width: 425px) {
+    .maincontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .listContainer{
+        overflow: unset;
+    }
+    .songCard{
+        flex-direction: column;
+        gap: 1em;
+    }
 }
