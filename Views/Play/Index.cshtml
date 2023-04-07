@@ -1,6 +1,7 @@
-@model MusicDatabase.Models.SongEntry;
+@model MusicDatabase.Models.SongPlay;
 @{
     ViewData["Title"] = "Play Song";
+    string song = "/Songs/"+Model.SongEntryId + ".mp4";
 }
     
 <link rel="stylesheet" href="~/css/mediaplayer.css">
@@ -9,15 +10,15 @@
         <div class="songCard">
             <div class="thumbnail"></div>
             <div class="songInfo">
-                <p>On My Way</p>
-                <p>Alan Walker</p>
-                <p>Live Fast</p>
-                <p>2018</p>
+                <p>@Model.SongName</p>
+                <p>@Model.SongArtist</p>
+                <p>@Model.SongAlbum</p>
+                <p>@Model.SongReleased</p>
             </div>
         </div>
         <div class="songControls">
             <div class="mediaplayer">
-                <audio src=""></audio>
+                <audio id="mediaPlayer" src="@song"></audio>
             </div>
             <div class="progressBarContainer">
                 <div id="timeProgressBar" class="progressBar">
@@ -26,13 +27,13 @@
                 </div>
             </div>
             <div class="timeContainer">
-                <p id="currentTime">3:30</p>
-                <p id="totalTime">2:13</p>
+                <p id="currentTime">00:00</p>
+                <p id="totalTime">00:00</p>
             </div>
             <div class="controlButtons">
-                <div class="seek"></div>
-                <div class="play"></div>
-                <div class="seek"></div>
+                <div class="seek" id="seek-prev"></div>
+                <div class="play playBG" id="play"></div>
+                <div class="seek" id="seek-next"></div>
             </div>
         </div>
     </div>
@@ -40,24 +41,9 @@
         <div class="songList">
             <p class="header">SONGS</p>
             <div class="scroll">
-                <div class="songBox">
-                    @* <div class="img"></div> *@
-                    <div>
-                        <p class="songName">On My Way</p>
-                        <p class="songArtist">Alan Walker</p>
-                    </div>
-                    <p>3:20</p>
-                </div>
-                <div class="songBox">
-                    @* <div class="img"></div> *@
-                    <div>
-                        <p class="songName">On My Way</p>
-                        <p class="songArtist">Alan Walker</p>
-                    </div>
-                    <p>3:20</p>
-                </div>
+                <partial name="MediaList.cshtml" model="Model"/>
             </div>
         </div>
     </div>
 </div>
-<script src="~/js/mediaplayer.js"></script>
+<script src="~/js/mediaplayer.js" asp-append-version="true"></script>

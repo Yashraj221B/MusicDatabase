@@ -71,7 +71,19 @@ public class PlayController : Controller
             }
             else
             {
-                return View(database.songEntries.Find(mid));
+                var song = database.songEntries.Find(mid);
+                SongPlay model = new SongPlay();
+                if(song != null)
+                {
+                    model.SongEntryId = song.SongEntryId;
+                    model.SongName = song.SongName;
+                    model.SongAlbum = song.SongAlbum;
+                    model.SongArtist = song.SongArtist;
+                    model.SongReleased = song.SongReleased;
+                    model.SongURL = song.SongURL;
+                }
+                model.SongList = database.songEntries.ToArray();
+                return View(model);
             }
         }
         return View(null);
@@ -153,37 +165,37 @@ public class PlayController : Controller
                         Console.WriteLine("URL: " + song.SongURL);
 
                         stream.Write(Encoding.ASCII.GetBytes(URL_START));
-                        Thread.Sleep(1000);
+                        Thread.Sleep(500);
 
                         stream.Write(Encoding.ASCII.GetBytes(song.SongURL));
-                        Thread.Sleep(1000);
+                        Thread.Sleep(500);
 
                         stream.Write(Encoding.ASCII.GetBytes(URL_END));
-                        Thread.Sleep(1000);
+                        Thread.Sleep(500);
 
                         stream.Read(code, 0, 3);
-                        Thread.Sleep(1000);
+                        Thread.Sleep(500);
                         
                         if (Encoding.ASCII.GetString(code) == URL_OK)
                         {
                             stream.Write(Encoding.ASCII.GetBytes(HASH_START));
-                            Thread.Sleep(1000);
+                            Thread.Sleep(500);
 
                             stream.Write(Encoding.ASCII.GetBytes(song.SongEntryId));
-                            Thread.Sleep(1000);
+                            Thread.Sleep(500);
 
                             stream.Write(Encoding.ASCII.GetBytes(HASH_END));
-                            Thread.Sleep(1000);
+                            Thread.Sleep(500);
 
                             stream.Read(code, 0, 3);
-                            Thread.Sleep(1000);
+                            Thread.Sleep(500);
 
                             if (Encoding.ASCII.GetString(code) == HASH_OK)
                             {
                                 stream.Write(Encoding.ASCII.GetBytes(DOWNLOAD_MEDIA));
-                                Thread.Sleep(1000);
+                                Thread.Sleep(500);
                                 stream.Read(code, 0, 3);
-                                Thread.Sleep(1000);
+                                Thread.Sleep(500);
                                 if (Encoding.ASCII.GetString(code) == DOWNLOAD_COMPLETE)
                                 {
                                     Console.WriteLine("DOWNLOADED: " + song.SongURL);

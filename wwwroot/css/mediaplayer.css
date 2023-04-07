@@ -12,6 +12,7 @@
     --seekButtonHoverBG: #652c8f;
     --listContainerBG: #effcff;
     --songBoxBG: #8251f7;
+    --songBoxBG-Current: #370074;
     --songBoxHoverBG: #4b1b69;
 }
 .container{
@@ -53,7 +54,7 @@
 }
 
 .songInfo p {
-    font-size: 1.6em;
+    font-size:  2vw;
     margin: 0;
 }
 
@@ -93,7 +94,6 @@
 }
 
 ._progress {
-    width: 50%;
     height: 100%;
     background-color: var(--progressBG);
     border-radius: 10px;
@@ -139,7 +139,16 @@
     border-radius: 100px;
     cursor: pointer;
     transition: all 100ms;
+}
+
+.playBG{
     background: url("/Assets/play.svg") var(--playButtonBG);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pauseBG{
+    background: url("/Assets/pause.svg") var(--playButtonBG);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -221,6 +230,9 @@
 }
 .songBox:hover{
     background-color: var(--songBoxHoverBG);
+}
+.songBox-Current{
+    background-color: var(--songBoxBG-Current);
 }
 @media screen and (max-width: 768px) {
     .maincontainer{

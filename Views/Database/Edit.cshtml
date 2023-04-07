@@ -5,45 +5,47 @@
 }
 
 @if (Model != null)
-{    
-    <p class="display-6 text-center">Edit Song Entry</p>
+{   
+    <div style="padding:2em 4em;"> 
+        <p class="display-6 text-center">Edit Song Entry</p>
 
-    <form action="Edit" method="post">
-        <div class="mb-3">
-            <label for="SongID" class="form-label">Song ID</label>
-            <input type="text" value="@Model.SongEntryId" class="form-control" id="SongID" name="SongID" placeholder="" readonly>
-        </div>
+        <form action="Edit" method="post">
+            <div class="mb-3">
+                <label for="SongID" class="form-label">Song ID</label>
+                <input type="text" value="@Model.SongEntryId" class="form-control" id="SongID" name="Son    gID" placeholder="" readonly>
+            </div>
 
-        <div class="mb-3">
-            <label for="SongName" class="form-label">Song Name</label>
-            <input type="text" value="@Model.SongName" class="form-control" id="SongName" name="SongName" placeholder="On My Way">
-        </div>
+            <div class="mb-3">
+                <label for="SongName" class="form-label">Song Name</label>
+                <input type="text" value="@Model.SongName" class="form-control" id="SongName" name="SongN   ame" placeholder="On My Way">
+            </div>
 
-        <div class="mb-3">
-            <label for="SongArtist" class="form-label">Song Artist</label>
-            <input type="text" value="@Model.SongArtist" class="form-control" id="SongArtist" name="SongArtist" placeholder="Alan Walker">
-        </div>
+            <div class="mb-3">
+                <label for="SongArtist" class="form-label">Song Artist</label>
+                <input type="text" value="@Model.SongArtist" class="form-control" id="SongArtist" name="SongArt ist" placeholder="Alan Walker">
+            </div>
 
-        <div class="mb-3">
-            <label for="SongAlbum" class="form-label">Song Album</label>
-            <input type="text" value="@Model.SongAlbum" class="form-control" id="SongAlbum" name="SongAlbum" placeholder="Live Fast">
-        </div>
+            <div class="mb-3">
+                <label for="SongAlbum" class="form-label">Song Album</label>
+                <input type="text" value="@Model.SongAlbum" class="form-control" id="SongAlbum" name="SongAl    bum" placeholder="Live Fast">
+            </div>
 
-        <div class="mb-3">
-            <label for="SongReleased" class="form-label">Song Release Date</label>
-            <input type="text" value="@Model.SongReleased" class="form-control" id="SongReleased" name="SongReleased" placeholder="2019">
-        </div>
+            <div class="mb-3">
+                <label for="SongReleased" class="form-label">Song Release Date</label>
+                <input type="text" value="@Model.SongReleased" class="form-control" id="SongRelea   sed" name="SongReleased" placeholder="2019">
+            </div>
 
-        <div class="mb-3">
-            <label for="SongURL" class="form-label">Song URL</label>
-            <input type="text" value="@Model.SongURL" class="form-control" id="SongURL" name="SongURL" placeholder="https://music.youtube.com/watch?v=">
-        </div>
+            <div class="mb-3">
+                <label for="SongURL" class="form-label">Song URL</label>
+                <input type="text" value="@Model.SongURL" class="form-control" id="SongURL" name="Song  URL" placeholder="https://music.youtube.com/watch?v=">
+            </div>
 
-        <button type="submit" class="btn btn-primary">Save Song</button>
-        <a asp-controller="Database" asp-action="Download" asp-route-id="@Model.SongEntryId" type="button" class="btn btn-primary">Download Song</a>
-        <a asp-controller="Database" asp-action="Delete" asp-route-id="@Model.SongEntryId" class="btn btn-danger">Delete Song</a>
+            <button type="submit" class="btn btn-primary">Save Song</button>
+            <a asp-controller="Database" asp-action="Download" asp-route-id="@Model.SongEntryId" type="butt on" class="btn btn-primary">Download Song</a>
+            <a asp-controller="Database" asp-action="Delete" asp-route-id="@Model.SongEntryId" class="  btn btn-danger">Delete Song</a>
 
-    </form>
+        </form>
+    </div>
 }else{
     <p class="display-6 text-center text-danger">Please Give Valid SongID</p>
 }

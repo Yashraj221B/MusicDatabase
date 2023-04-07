@@ -1,0 +1,56 @@
+@model SongPlay;
+@{
+    int counter = 0;
+}
+
+@if (Model.SongList!=null)
+{
+    @foreach (var song in Model.SongList)
+    {   
+        counter++;
+        if (Model.SongEntryId == song.SongEntryId)
+        {
+            <div class="songBox songBox-Current">
+                @* <div class="img"></div> *@
+                <div>
+                    @if (song.SongName != null)
+                        {
+                            <p class="songName">@song.SongName</p>
+                        }else{
+                            <p class="songName">UNKNOWN</p>
+                        }
+                        @if (song.SongArtist != null)
+                        {
+                            <p class="songArtist">@song.SongArtist</p>
+                        }else{
+                            <p class="songArtist">UNKNOWN</p>
+                        }
+                </div>
+            </div>
+        }else{
+            <a href="/Play?mid=@song.SongEntryId" style="text-decoration: none;">
+                <div class="songBox">
+                    @* <div class="img"></div> *@
+                    <div>
+                        @if (song.SongName != null)
+                        {
+                            <p class="songName">@song.SongName</p>
+                        }else{
+                            <p class="songName">UNKNOWN</p>
+                        }
+                        @if (song.SongArtist != null)
+                        {
+                            <p class="songArtist">@song.SongArtist</p>
+                        }else{
+                            <p class="songArtist">UNKNOWN</p>
+                        }
+                    </div>
+                </div>
+            </a>
+        }
+    }
+    <script>
+        var element = document.getElementsByClassName("songBox-Current")[0];
+        element.scrollIntoView();
+    </script>
+}
