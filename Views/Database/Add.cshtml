@@ -5,7 +5,7 @@
 <div style="padding: 2em 4em;">
     <p class="display-6 text-center">Add Song Entry</p>
     <form action="add" method="post">
-        @Html.AntiForgeryToken()
+        @* @Html.AntiForgeryToken() *@
         <div class="mb-3">
             <label for="SongName" class="form-label">Song Name</label>
             <input type="text" class="form-control" id="SongName" name="SongName" placeholder="On My Way" required>
@@ -24,6 +24,11 @@
         <div class="mb-3">
             <label for="SongReleased" class="form-label">Song Release Date</label>
             <input type="text" class="form-control" id="SongReleased" name="SongReleased" placeholder="2019">
+        </div>
+
+        <div class="mb-3">
+            <label for="SongThumbnail" class="form-label">Song Thumbnail</label>
+            <input type="text" class="form-control" id="SongThumbnail" name="SongThumbnail" placeholder="https://cdn.images.com/img?id=images.jpeg">
         </div>
 
         <div class="mb-3">

@@ -2,13 +2,16 @@
 @{
     ViewData["Title"] = "Play Song";
     string song = "/Songs/"+Model.SongEntryId + ".mp4";
+    string thumb = "/Thumbs/"+Model.SongEntryId + ".jpeg";
 }
     
 <link rel="stylesheet" href="~/css/mediaplayer.css">
 <div class="maincontainer">
     <div class="songContainer">
         <div class="songCard">
-            <div class="thumbnail"></div>
+            <div class="thumbnail">
+                <img src="@thumb" alt="Logo" onerror="this.src='/Assets/music_logo.png'">
+            </div>
             <div class="songInfo">
                 <input type="hidden" id="mid" value="@Model.SongEntryId">
                 <p>@Model.SongName</p>

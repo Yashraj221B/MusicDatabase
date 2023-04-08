@@ -80,6 +80,7 @@ public class PlayController : Controller
                     model.SongAlbum = song.SongAlbum;
                     model.SongArtist = song.SongArtist;
                     model.SongReleased = song.SongReleased;
+                    model.SongThumbnail = song.SongThumbnail;
                     model.SongURL = song.SongURL;
                 }
                 model.SongList = database.songEntries.ToArray();

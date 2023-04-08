@@ -25,6 +25,13 @@ app.UseStaticFiles(new StaticFileOptions
     RequestPath = "/Songs",
 });
 
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+           Path.Combine(builder.Environment.ContentRootPath, "Thumbs")),
+    RequestPath = "/Thumbs",
+});
+
 app.UseRouting();
 
 app.UseAuthorization();

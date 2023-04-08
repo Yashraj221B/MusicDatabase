@@ -44,14 +44,15 @@ public class DatabaseController : Controller
         return View();
     }
     [HttpPost]
-    [ValidateAntiForgeryToken]
-    public IActionResult Add(string SongName, string SongArtist, string SongAlbum, string SongReleased, string SongURL)
+    // [ValidateAntiForgeryToken]
+    public IActionResult Add(string SongName, string SongArtist, string SongAlbum, string SongReleased, string SongThumbnail, string SongURL)
     {
         SongEntry song = new SongEntry();
         song.SongName = SongName;
         song.SongArtist = SongArtist;
         song.SongAlbum = SongAlbum;
         song.SongReleased = SongReleased;
+        song.SongThumbnail = SongThumbnail;
         song.SongURL = SongURL;
         song.SongEntryId = Convert.ToHexString(SHA256.HashData(Encoding.ASCII.GetBytes(SongName)));
         database.Add(song);
@@ -73,7 +74,7 @@ public class DatabaseController : Controller
         }
     }
     [HttpPost]
-    public IActionResult Edit(string SongID, string SongName, string SongArtist, string SongAlbum, string SongReleased, string SongURL)
+    public IActionResult Edit(string SongID, string SongName, string SongArtist, string SongAlbum, string SongReleased, string SongThumbnail, string SongURL)
     {
         if (database.songEntries != null)
         {
@@ -85,6 +86,7 @@ public class DatabaseController : Controller
                 song.SongAlbum = SongAlbum;
                 song.SongReleased = SongReleased;
                 song.SongURL = SongURL;
+                song.SongThumbnail = SongThumbnail;
                 database.SaveChanges();
             }
             return Redirect("/Database/Edit/" + SongID);

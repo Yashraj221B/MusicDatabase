@@ -1,4 +1,4 @@
-PS C:\Users\Yashraj221b\YASHFILES\MusicDatabase> py .\GetSongInfo.py
+GetSongFromJSONPS C:\Users\Yashraj221b\YASHFILES\MusicDatabase> py .\GetSongInfo.py
 Enter Server URL: https://localhost:7056/
 
 DevTools listening on ws://127.0.0.1:52064/devtools/browser/80daeab7-0732-4fb0-a80e-2eef25ab76e9

@@ -1,3 +1,5 @@
+var intervalID;
+
 // Time Progressbar
 var timeProgressBar = document.getElementById("timeProgressBar");
 var timeProgress = document.getElementById("timeProgress");
@@ -85,10 +87,9 @@ function playPrev()
     clearInterval();
     window.location = "/Play/Previous?mid="+mid.value;
 }
-
 // final implementaion and activation
-mediaPlayer.onplay = () => { setInterval(timeProgressChange, 1000) }
-mediaPlayer.onpause = () => { clearInterval() 
+mediaPlayer.onplay = () => {intervalID =  setInterval(timeProgressChange, 1000) }
+mediaPlayer.onpause = () => { clearInterval(intervalID); 
     playButton.classList.remove("pauseBG");
     playButton.classList.add("playBG");
 }
