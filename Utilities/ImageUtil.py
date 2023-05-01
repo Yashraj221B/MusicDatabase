@@ -18,13 +18,7 @@ fh = open("data.json","r")
 final_request = json.load(fh)
 
 for song in final_request["items"]:
-    print("Song Name:",song["track"]["name"])
-    artists = []
-    for i in song["track"]["artists"]:
-        artists.append(i["name"])
-    print("Artists:",' • '.join(artists))
-    print("Album Name:",song["track"]["album"]["name"])
-    print("Release Date:",song["track"]["album"]["release_date"])
-    print("Thumbnail:",song["track"]["album"]["images"][0]["url"])
-    print("Song URL:",song["track"]["external_urls"]["spotify"])
-    print("===========================================================================")
+    image = song["track"]["album"]["images"][0]["url"]
+    raw_data = requests.get(image)
+    with open(f"../Thumbs/{song['track']['name']}.jpg","wb") as f:
+        f.write(raw_data.content)

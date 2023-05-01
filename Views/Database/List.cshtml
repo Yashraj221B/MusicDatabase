@@ -21,7 +21,7 @@
                         <!-- <p class="songAlbum">@song.SongAlbum</p> -->
                     </div>
                     <div>
-                        <a class="btn btn-primary">Play</a>
+                        <a class="btn btn-primary" asp-controller="Play" asp-action="Index">Play</a>
                         <a class="btn btn-primary" asp-controller="Database" asp-action="Edit" asp-route-id="@song.SongEntryId">Edit</a>
                         <a class="btn btn-primary" asp-controller="Database" asp-action="Delete" asp-route-id="@song.SongEntryId">Delete</a>
                     </div>

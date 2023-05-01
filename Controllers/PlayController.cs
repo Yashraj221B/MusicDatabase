@@ -4,6 +4,7 @@ using MusicDatabase.Data;
 using MusicDatabase.Models;
 using System.Security.Cryptography;
 using System.Text;
+using System.Net;
 
 namespace MusicDatabase.Controllers;
 
@@ -212,6 +213,33 @@ public class PlayController : Controller
                 stream.Write(Encoding.ASCII.GetBytes(END_DOWNLOAD));
                 stream.Close();
                 server.Close();
+            }
+        }
+        catch (System.Exception e)
+        {
+            Console.WriteLine(e);
+            return Content($"<h1>ERROR OCCURED</h1>\n<h2>{e.Message}</h2>", "text/html");
+        }
+        return Content("<h1>DOWNLOADED SUCCESSFULLY</h1>", "text/html");
+    }
+    
+    public IActionResult DownloadThumbnail()
+    {
+        try
+        {
+            if (database.songEntries != null)
+            {
+                WebClient client = new WebClient();
+                
+                foreach (var song in database.songEntries)
+                {
+                    if (song.SongEntryId != null && song.SongThumbnail != null)
+                    {
+                        Console.WriteLine("Name: " + song.SongName);
+                        Console.WriteLine("URL: " + song.SongURL);
+                        client.DownloadFile(song.SongThumbnail, "Thumbs/" + song.SongEntryId + ".jpeg");
+                    }
+                }
             }
         }
         catch (System.Exception e)

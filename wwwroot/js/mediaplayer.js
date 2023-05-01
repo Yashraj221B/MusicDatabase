@@ -5,12 +5,16 @@ var timeProgressBar = document.getElementById("timeProgressBar");
 var timeProgress = document.getElementById("timeProgress");
 var timeProgressHandle = document.getElementById("timeProgresshandle");
 
+//Volume Progressbar
+//Implementation pending!
+var volumeProgressBar = document.getElementById("volumeProgressBar");
+var volumeProgress = document.getElementById("volumeProgress");
+var volumeProgressHandle = document.getElementById("volumeProgresshandle");
+
 //Time Elements
 var currentTime = document.getElementById("currentTime")
 var totalTime = document.getElementById("totalTime")
 
-//Volume Progressbar
-//Implementation pending!
 
 //Player Controls
 var playButton = document.getElementById("play");
@@ -20,6 +24,22 @@ var seekNext = document.getElementById("seek-next");
 //MediaPlayer element
 var mediaPlayer = document.getElementById("mediaPlayer");
 var mid = document.getElementById("mid");
+
+function volumeProgressChange(event)
+{
+    volumeProgress.style.width = (mediaPlayer.volume * (volumeProgressBar.clientWidth / 1)) + "px";
+}
+
+function volumeProgressMove(event)
+{
+    if(event.pageX-volumeProgressBar.offsetLeft > volumeProgressBar.clientWidth)
+    {
+        return;
+    }
+    volumeProgress.style.width = event.pageX-volumeProgressBar.offsetLeft+"px";
+    mediaPlayer.volume = volumeProgress.clientWidth / (volumeProgressBar.clientWidth / 1);
+    document.onmousemove = volumeProgressMove;
+}
 
 function timeProgressChange(event)
 {
@@ -41,13 +61,13 @@ function timeProgressMove(event)
 function onPlayClicked()
 {
     if (mediaPlayer.paused) {
+        mediaPlayer.play();
         playButton.classList.add("pauseBG");
         playButton.classList.remove("playBG");
-        mediaPlayer.play();
     }else{
+        mediaPlayer.pause();
         playButton.classList.remove("pauseBG");
         playButton.classList.add("playBG");
-        mediaPlayer.pause();
     }
 }
 
@@ -94,6 +114,7 @@ mediaPlayer.onpause = () => { clearInterval(intervalID);
     playButton.classList.add("playBG");
 }
 timeProgressBar.onmousedown = timeProgressMove;
+volumeProgressBar.onmousedown = volumeProgressMove;
 playButton.onclick = onPlayClicked;
 seekNext.onclick = playNext;
 seekPrev.onclick = playPrev;

@@ -24,10 +24,18 @@
             <div class="mediaplayer">
                 <audio id="mediaPlayer" src="@song"></audio>
             </div>
-            <div class="progressBarContainer">
-                <div id="timeProgressBar" class="progressBar">
-                    <div id="timeProgress" class="_progress"></div>
-                    <div id="timeProgressHandle" class="handle"></div>
+            <div style="display: grid;grid-template-columns: 80% 20%;">
+                <div class="progressBarContainer">
+                    <div id="timeProgressBar" class="progressBar">
+                        <div id="timeProgress" class="_progress"></div>
+                        <div id="timeProgressHandle" class="handle"></div>
+                    </div>
+                </div>
+                <div class="progressBarContainer">
+                    <div id="volumeProgressBar" class="progressBar">
+                        <div id="volumeProgress" class="_progress"></div>
+                        <div id="volumeProgressHandle" class="handle"></div>
+                    </div>
                 </div>
             </div>
             <div class="timeContainer">
