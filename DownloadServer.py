@@ -63,10 +63,12 @@ def handleConnection(client: socket.socket, address: tuple):
                     client.send(HASH_ERROR)
                 else:
                     try:
+                        #media = YouTube(url)
                         media = YouTube(url)
                         media.streams.get_audio_only().download(output_path="./Songs/",filename=hash+".mp4")
                         client.send(DOWNLOAD_COMPLETE)
-                    except:
+                    except Exception as e:
+                        print(e)
                         client.send(DOWNLOAD_ERROR)
 
             elif code == END_DOWNLOAD:

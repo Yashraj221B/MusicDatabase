@@ -258,6 +258,10 @@ public class DatabaseController : Controller
         if (searchTerm == "" || searchTerm == null)
         {
             return Content("");
+        }else if(searchTerm == "$ALL$")
+        {
+            songList.SongList = database.songEntries.ToArray();
+            return View(songList);
         }
 
         if (database.songEntries != null)
@@ -293,6 +297,7 @@ public class DatabaseController : Controller
                     }
                 }
             }
+            // songList.SongList = database.songEntries.ToArray();
             songList.SongList = results;
             return View(songList);
         }

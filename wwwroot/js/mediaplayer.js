@@ -25,6 +25,9 @@ var seekNext = document.getElementById("seek-next");
 var mediaPlayer = document.getElementById("mediaPlayer");
 var mid = document.getElementById("mid");
 
+//Search box
+var search = document.getElementsByName("SearchTerm")[0];
+
 function volumeProgressChange(event)
 {
     volumeProgress.style.width = (mediaPlayer.volume * (volumeProgressBar.clientWidth / 1)) + "px";
@@ -39,6 +42,7 @@ function volumeProgressMove(event)
     volumeProgress.style.width = event.pageX-volumeProgressBar.offsetLeft+"px";
     mediaPlayer.volume = volumeProgress.clientWidth / (volumeProgressBar.clientWidth / 1);
     document.onmousemove = volumeProgressMove;
+    setCookie("volume",mediaPlayer.volume,30);
 }
 
 function timeProgressChange(event)
@@ -107,6 +111,47 @@ function playPrev()
     clearInterval();
     window.location = "/Play/Previous?mid="+mid.value;
 }
+
+function handleKeyboardEvents(event)
+{
+    if (event.key == "ArrowUp") {
+        // console.log("ArrowUp")
+        mediaPlayer.volume = mediaPlayer.volume + 0.02;
+        setCookie("volume",mediaPlayer.volume,30)
+        volumeProgressChange();
+        event.preventDefault()
+    }else if (event.key == "ArrowDown") {
+        mediaPlayer.volume = mediaPlayer.volume - 0.02;
+        // console.log("ArrowDown")
+        setCookie("volume",mediaPlayer.volume,30)
+        volumeProgressChange();
+        event.preventDefault()
+    }else if (event.key == "ArrowLeft") {
+        // console.log("ArrowLeft")
+        if (event.ctrlKey)
+        {
+            seekPrev.click();
+        }else{
+            mediaPlayer.currentTime = mediaPlayer.currentTime - 5;
+            timeProgressChange();
+            event.preventDefault()
+        }
+    }else if (event.key == "ArrowRight") {
+        // console.log("ArrowRight")
+        if (event.ctrlKey)
+        {
+            seekNext.click();
+        }else{
+            mediaPlayer.currentTime = mediaPlayer.currentTime + 5;
+            timeProgressChange();
+            event.preventDefault()
+        }
+    }else if (event.key == " ") {
+        // console.log("Space")
+        playButton.click();
+        event.preventDefault()
+    }
+}
 // final implementaion and activation
 mediaPlayer.onplay = () => {intervalID =  setInterval(timeProgressChange, 1000) }
 mediaPlayer.onpause = () => { clearInterval(intervalID); 
@@ -121,3 +166,13 @@ seekPrev.onclick = playPrev;
 document.onmouseup  = () => {document.onmousemove = null}
 
 mediaPlayer.onloadedmetadata = updateTime;
+
+mediaPlayer.volume = Number.parseFloat(getCookie("volume"));
+
+document.onkeydown = handleKeyboardEvents;
+volumeProgressChange();
+window.onload = () => {playButton.click();}
+mediaPlayer.onended = () => {seekNext.click();}
+
+search.onfocus = () => {document.onkeydown = null;}
+search.onblur = () => {document.onkeydown = handleKeyboardEvents;}
