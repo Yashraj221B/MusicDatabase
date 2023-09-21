@@ -18,6 +18,16 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+if (!Directory.Exists(Path.Combine(builder.Environment.ContentRootPath, "Songs")))
+{
+    Directory.CreateDirectory(Path.Combine(builder.Environment.ContentRootPath, "Songs"));
+}
+
+if (!Directory.Exists(Path.Combine(builder.Environment.ContentRootPath, "Thumbs")))
+{
+    Directory.CreateDirectory(Path.Combine(builder.Environment.ContentRootPath, "Thumbs"));
+}
+
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
@@ -31,6 +41,7 @@ app.UseStaticFiles(new StaticFileOptions
            Path.Combine(builder.Environment.ContentRootPath, "Thumbs")),
     RequestPath = "/Thumbs",
 });
+
 
 app.UseRouting();
 

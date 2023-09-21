@@ -230,6 +230,7 @@ public class PlayController : Controller
             if (database.songEntries != null)
             {
                 WebClient client = new WebClient();
+                HttpClient cli = new();
                 
                 foreach (var song in database.songEntries)
                 {

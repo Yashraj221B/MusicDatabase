@@ -1,5 +1,6 @@
-import spotdl
 import json
+import spotdl
+import hashlib
 import requests
 
 client_id = input("Client Id: ")
@@ -11,7 +12,11 @@ fh = open("data.json","r")
 
 final_request = json.load(fh)
 
-for song in final_request["items"]:
+def getHash(text:str):
+    sha = hashlib.sha256(text.encode())
+    return sha.hexdigest().upper()
+
+for song in final_request["Songs"]:
     artists = []
     for i in song["track"]["artists"]:
         artists.append(i["name"])
@@ -31,7 +36,7 @@ for song in final_request["items"]:
         "SongThumbnail": song["track"]["album"]["images"][0]["url"],
         "SongURL": urls[0]
     }
-    response = requests.post("https://localhost:5001/Database/Add",data=data,verify=False)
+    response = requests.post("http://localhost:5085/Database/Add",data=data,verify=False)
     print(json.dumps(data,indent=4))
     print("===========================================================================")
 

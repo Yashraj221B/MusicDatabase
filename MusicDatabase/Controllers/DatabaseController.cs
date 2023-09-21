@@ -126,7 +126,7 @@ public class DatabaseController : Controller
 
     public IActionResult Download(string? Id)
     {
-#pragma warning disable
+        #pragma warning disable
 
         string INVALID_CODE = "100";
         string START_DOWNLOAD = "101";
@@ -145,7 +145,7 @@ public class DatabaseController : Controller
         string TOKEN_SUCCESS = "114";
         string TOKEN_ERROR = "115";
 
-#pragma warning restore
+        #pragma warning restore
         if (Id == null)
         {
             return Content("<h1>Please pass ID</h1>");
